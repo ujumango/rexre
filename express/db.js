@@ -1,9 +1,10 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '10201981',
-  database : 'yuju'
+  host     : 'us-cdbr-east-06.cleardb.net',
+  user     : 'be2dcc9b032eda',
+  password : 'f4673df3',
+  database : 'heroku_041c18528f2c27d',
+  multipleStatements : true //다중쿼리용 설정
 });
  
 connection.connect(function(err) {

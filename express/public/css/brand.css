@@ -26,6 +26,8 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
+
+  
   @keyframes scroll{
     0%{ bottom:320px;}
     50%{bottom:280px;}
