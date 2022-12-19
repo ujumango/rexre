@@ -8,5 +8,5 @@ let port = 3000;
 //   console.log(`${port}로 express 실행`)
 // })
 
-app.listen(process.env.PORT || port)
+app.listen(port)
 
