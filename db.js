@@ -4,7 +4,6 @@ var connection = mysql.createConnection({
   user     : 'root',
   password : '10201981',
   database : 'yuju',
-  dateStrings:'date',
   multipleStatements : true //다중쿼리용 설정 -> 테이블 여러개 조회 가능
 });
  
