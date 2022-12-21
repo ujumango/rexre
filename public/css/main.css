@@ -627,7 +627,31 @@ margin-top: 10px;
       transition-delay: 0 !important;
  
   } */
-
+@media (max-width:1100px){
+  .main1_wrap{
+    width: 100%;
+    flex-direction: column;
+    padding-top:100px;
+    padding-bottom:120px; 
+    text-align: center;
+  }
+  .sec1_left{
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+  .sec1_right{
+    margin: 0px auto;
+  }
+  .mobile_btn{
+    display: block;
+    margin: 50px auto;
+  }
+  #main .btn{
+    display: none;
+  }
+}
   @media (max-width:1000px){
 
   /*main2 - product 시작*/
@@ -649,9 +673,7 @@ margin-top: 10px;
     padding:50px 0 30px 0;
   }
 
-  .btn{
-    display: none;
-  }
+ 
 
 /*인스타 섹션*/
 .insta_list>li{
@@ -683,10 +705,7 @@ h3{
 h1{
   font-size: 40px;
 }
-.mobile_btn{
-  display: block;
-  margin: 50px auto;
-}
+
   #main_bnr{
     margin: 0 auto;
   }
@@ -712,22 +731,8 @@ h1{
   .swiper-pagination{
     text-align:center;
   }
-  .main1_wrap{
-    width: 100%;
-    flex-direction: column;
-    padding-top:100px;
-    padding-bottom:120px; 
-    text-align: center;
-  }
-  .sec1_left{
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-  }
-  .sec1_right{
-    margin: 0px auto;
-  }
+ 
+
 
   /*moving-bnr 시작*/
   #main3{

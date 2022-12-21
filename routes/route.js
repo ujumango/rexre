@@ -128,7 +128,7 @@ router.post('/updateNoti',(req, res)=>{
 const upload = multer({
   storage:multer.diskStorage({
     destination(req,file,done){
-      done(null, 'public/uploads/');
+      done(null, '../public/uploads/');
     },
     filename(req,file,done){
       const ext = path.extname(file.originalname);
@@ -249,7 +249,9 @@ router.post('/loginre', (req, res)=>{
 
   db.loginCheck(id,pw, (results)=>{
     if(results.length>0) {
-      res.redirect('/')
+      // res.redirect('/')
+      res.send(`<script>alert("${id}님! 환영합니다!"); document.location.href="/";</script>`)
+
     }else{
       res.send(`<script>alert("로그인 정보가 일치하지 않습니다."); document.location.href="/login";</script>`)
     }
