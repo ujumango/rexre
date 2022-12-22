@@ -73,7 +73,7 @@ function insertProduct(img,name,price,text,viewTxt, callback){
 }
 
 function getProduct(callback){
-    connection.query('SELECT * FROM productDB ORDER BY id desc', (err,rows,fields)=>{
+    connection.query('SELECT * FROM productdb ORDER BY id desc', (err,rows,fields)=>{
         if(err) throw err;
         callback(rows);
     })
@@ -81,21 +81,21 @@ function getProduct(callback){
 
 
 function getProductbyId (id, callback){
-    connection.query(`SELECT * FROM productDB WHERE id = ${id}`, (err,row)=>{
+    connection.query(`SELECT * FROM productdb WHERE id = ${id}`, (err,row)=>{
         if(err) throw err;
         callback(row);
     })
 }
 
 function updateProduct(id,img,name,price,text,viewTxt, callback){
-    connection.query(`UPDATE productDB SET create_time=NOW(),img='${img}', name='${name}',price='${price}', product_txt='${text}', product_exp='${viewTxt}' WHERE id=${id}`, (err)=>{
+    connection.query(`UPDATE productdb SET create_time=NOW(),img='${img}', name='${name}',price='${price}', product_txt='${text}', product_exp='${viewTxt}' WHERE id=${id}`, (err)=>{
         if(err) throw err;
         callback();
     })
 }
 
 function deletePbyId (id, callback){
-    connection.query(`DELETE FROM productDB WHERE id=${id}`,(err) => {
+    connection.query(`DELETE FROM productdb WHERE id=${id}`,(err) => {
         if(err) throw err;
         callback();
     })
