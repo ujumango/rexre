@@ -1,8 +1,8 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'database-1.c8sahyezkncb.ap-northeast-2.rds.amazonaws.com',
+  host     : 'database-1.cbqest5qkykx.ap-northeast-2.rds.amazonaws.com',
   user     : 'root',
-  password : '10201981',
+  password : 'yujoo1020',
   database : 'yuju',
   multipleStatements : true //다중쿼리용 설정 -> 테이블 여러개 조회 가능
 });
