@@ -60,7 +60,7 @@ h1{
 
 .big_txt{
   position: absolute;
-  bottom:30%; 
+  bottom:30%; left:6%;
   box-sizing: border-box;
 }
 
@@ -73,7 +73,10 @@ h1{
 .swiper-pagination{
   text-align: left;
   padding-left: -10px;
+  /* position: absolute; */
+ 
 }
+
 .swiper-pagination>span{
   border-radius: 0;
   width: 80px; height: 8px;
@@ -85,13 +88,15 @@ h1{
   background-color: #ffffff90;
 }
 .swiper-pagination-bullet{
-  background-color: #00000030;
+  background-color: #00000050;
+  border: 1px solid #ffffff50;
 }
 .swiper-pagination-bullet-active{
-  background-color: #00000050;
+  background-color: #00000090;
+  
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: 0;
+  bottom: 30%; left: 6%;
 }
 /*MAIN - BNR 종료*/
 
@@ -731,7 +736,10 @@ h1{
   .swiper-pagination{
     text-align:center;
   }
- 
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 10%; left: 50%;
+    transform: translateX(-50%);
+  }
 
 
   /*moving-bnr 시작*/
