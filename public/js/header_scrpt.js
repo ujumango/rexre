@@ -62,9 +62,13 @@ for(i=0; i< mobile_title.length; i++){
             for (j=0; j < act.length; j++){
                 act[j].classList.remove('mo_active')
                 act[j].nextElementSibling.style.maxHeight = null;
+                act[j].style.transition = 'max-height 0.5s ease-in-out'
+                console.log('안녕')
             }
             this.classList.add('mo_active');
-            next.style.maxHeight = 'fit-content';
+            next.style.maxHeight = '800px';
+            // next.style.transition = 'height 0.3s'
+            console.log('잘가')
         }
     })
 }
